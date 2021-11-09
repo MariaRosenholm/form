@@ -1,38 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./pics/background.jpg");
+  background-size: cover;
+  padding: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  border-top: olive double 2px;
+}
+
+h1 {
   text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3vh;
+  padding-top: 3vh;
+  color: rgb(223, 22, 7);
+  font-family: "Petit Formal Script", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  background-color: rgb(221, 237, 205);
+  font-family: "Josefin Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ##################### Form  ##################### */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(143, 151, 90);
+  width: 45vw;
+  padding: 5vh;
+  box-shadow: rgb(22, 36, 16) 1px 1px 5px 1px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  padding-top: 2vh;
+  margin-left: 2vw;
+  font-size: 20px;
+  color: rgb(15, 31, 2);
+}
+
+input,
+textarea,
+select,
+button {
+  margin: 1vh 5vw;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#lastname {
+  margin-left: 5.1vw;
+}
+
+#number {
+  margin-left: 2.7vw;
+}
+
+#message {
+  margin-left: 6.2vw;
+  height: 10vh;
+}
+
+#role {
+  margin-left: 9vw;
+  width: 18vw;
+}
+
+input[type="submit"],
+button {
+  margin-left: 13.7vw;
+  background-color: rgb(73, 116, 53);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* ##################### View  ##################### */
+
+#viewMain {
+  padding-left: 10vh;
+}
+
+#view {
+  background-color: rgb(221, 237, 205);
+  width: 40vw;
+  border: solid 1px grey;
+  box-shadow: rgb(73, 116, 53) 1px 1px 5px 1px;
+}
+
+#red {
+  border: 1px grey solid;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+#view p {
+  border-left: double rgb(237, 82, 15) 10px;
+  margin-left: 2vw;
+  padding: 2.1vw;
+  font-size: 22px;
+}
+
+#red div {
+  padding: 2.1vw;
+  font-family: "Petit Formal Script", cursive;
+}
+
+/* ##################### PopUp  ##################### */
+
+#popUp {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#card {
+  width: 35%;
+  height: 80%;
+  background-color: rgb(234, 240, 227);
+  z-index: 3;
+  padding-bottom: 2vh;
+  border-radius: 5px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: black;
+  opacity: 85%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+ul {
+  list-style: none;
+  font-size: 25px;
+  margin-left: 2.5vw;
+}
+
+li {
+  margin-bottom: 6vh;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 8vh 0vw 5vh 2vw;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+}
+
+#card button {
+  width: 25vw;
+  height: 8vh;
+  margin-left: 1.9vw;
+  margin-right: 2vw;
+}
+
+#card button:nth-child(even) {
+  background: transparent;
+  border: none;
+  color: rgb(73, 116, 53);
+}
+
+#card button:nth-child(even):hover {
+  background-color: rgb(30, 70, 12);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#card button:nth-child(odd):hover,
+input[type="submit"]:hover {
+  background-color: rgb(113, 148, 97);
 }
