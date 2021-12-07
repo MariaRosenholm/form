@@ -4,7 +4,8 @@ This is a Business College Helsinki school assingment.
 
 ## Build with
 
-React
+- React
+- JSON-SERVER
 
 ## Screenshot
 
