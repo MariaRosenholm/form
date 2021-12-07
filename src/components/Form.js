@@ -1,9 +1,9 @@
 import React from "react";
 
-const Form = (props) => {
+const Form = ({ change, submit }) => {
   return (
     <div>
-      <form onSubmit={props.submit}>
+      <form onSubmit={submit}>
         <div className="inputs">
           <label htmlFor="firstname">First name</label>
           <input
@@ -11,7 +11,7 @@ const Form = (props) => {
             name="firstname"
             id="firstname"
             required
-            onChange={props.change}
+            onChange={change}
           />
         </div>
         <div className="inputs">
@@ -21,17 +21,18 @@ const Form = (props) => {
             name="lastname"
             id="lastname"
             required
-            onChange={props.change}
+            onChange={change}
           />
         </div>
         <div className="inputs">
           <label htmlFor="number">Phone number</label>
           <input
-            type="text"
+            type="number"
             name="number"
             id="number"
             required
-            onChange={props.change}
+            onChange={change}
+            placeholder="00358..."
           />
         </div>
         <div className="inputs">
@@ -40,12 +41,15 @@ const Form = (props) => {
             name="message"
             id="message"
             required
-            onChange={props.change}
+            onChange={change}
+            maxLength="25"
+            placeholder="Max 25 characters"
           ></textarea>
         </div>
         <div className="inputs">
           <label htmlFor="role">Role</label>
-          <select name="role" id="role" onChange={props.change}>
+          <select name="role" id="role" onChange={change} required>
+            <option value="">Choose a role...</option>
             <option value="Student">Student</option>
             <option value="Teacher">Teacher</option>
             <option value="Other">Other</option>

@@ -13,23 +13,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 87vh;
+  height: 65vh;
   border-top: olive double 2px;
 }
 
 h1 {
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 3vh;
   padding-top: 3vh;
+  height: 12vh;
   color: rgb(223, 22, 7);
   font-family: "Petit Formal Script", cursive;
 }
 
 main {
-  background-color: rgb(221, 237, 205);
   font-family: "Josefin Sans", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(221, 237, 205);
 }
 
 /* ##################### Form  ##################### */
@@ -39,6 +43,7 @@ form {
   background-color: rgb(143, 151, 90);
   width: 45vw;
   padding: 5vh;
+  height: 58vh;
   box-shadow: rgb(22, 36, 16) 1px 1px 5px 1px;
 }
 
@@ -50,7 +55,7 @@ form {
 
 label {
   padding-top: 2vh;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(15, 31, 2);
 }
 
@@ -67,17 +72,24 @@ button {
   font-family: "Josefin Sans", sans-serif;
 }
 
+input,
+textarea,
+select {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
 #number {
-  margin-left: 3vw;
+  margin-left: 2.7vw;
 }
 
 #message {
-  margin-left: 5.7vw;
+  margin-left: 6.2vw;
   height: 10vh;
 }
 
 #role {
-  margin-left: 9.8vw;
+  margin-left: 10.9vw;
   width: 18vw;
 }
 
@@ -114,13 +126,51 @@ button {
 #view p {
   border-left: double rgb(237, 82, 15) 10px;
   margin-left: 2vw;
-  padding: 2.1vw;
+  padding: 2.4vw;
   font-size: 22px;
 }
 
 #red div {
   padding: 2.1vw;
   font-family: "Petit Formal Script", cursive;
+}
+
+/* ##################### Notes  ##################### */
+
+#notesWrapper {
+  display: flex;
+  overflow-x: scroll;
+  border-top: olive double 2px;
+}
+
+#notes {
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.8rem;
+  padding: 3vw;
+  margin: 1vh;
+  margin-right: 16vh;
+}
+
+#notes:first-child {
+  margin-left: 2vw;
+}
+
+#notes:last-child {
+  margin-right: 13vh;
+}
+
+#notes p {
+  width: 35vw;
+  margin-top: 0.8vh;
+}
+
+h3 {
+  font-size: 2rem;
+  border-bottom: grey solid 3px;
+  border-radius: 5px;
 }
 
 /* ##################### PopUp  ##################### */

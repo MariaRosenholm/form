@@ -4,20 +4,20 @@ const close = () => {
   window.location.reload();
 };
 
-const PopUp = (props) => {
+const PopUp = ({ firstname, lastname, number, message, role, postIt }) => {
   return (
     <div id="popUp">
       <div id="card">
         <h2>Your message: </h2>
         <ul>
-          <li>First name: {props.firstname}</li>
-          <li>Last name: {props.lastname}</li>
-          <li>Phone number: {props.number}</li>
-          <li>Message: {props.message}</li>
-          <li>Role: {props.role}</li>
+          <li>First name: {firstname}</li>
+          <li>Last name: {lastname}</li>
+          <li>Phone number: {number}</li>
+          <li>Message: {message}</li>
+          <li>Role: {role}</li>
         </ul>
         <div id="buttons">
-          <button name="showPopUp" onClick={close}>
+          <button name="showPopUp" onClick={postIt}>
             YES, I AM SURE
           </button>
           <button name="showPopUp" onClick={close}>

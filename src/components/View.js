@@ -1,23 +1,23 @@
-const View = (props) => {
+const View = ({ firstname, lastname, number, message, role }) => {
   return (
     <div id="viewMain">
       <div id="view">
         <div id="red">
-          <p>First name </p> <div>{props.firstname}</div>
+          <p>First name </p> <div>{firstname}</div>
         </div>
         <div id="red">
-          <p>Last name </p> <div>{props.lastname}</div>
+          <p>Last name </p> <div>{lastname}</div>
         </div>
         <div id="red">
-          <p>Phone number </p> <div>{props.number}</div>
+          <p>Phone number </p> <div>{number}</div>
         </div>
         <div id="red">
           <p>Message </p>
-          <div>{props.message}</div>
+          <div>{message}</div>
         </div>
         <div id="red">
           <p>Role </p>
-          <div>{props.role}</div>
+          <div>{role}</div>
         </div>
       </div>
     </div>
