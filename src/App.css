@@ -36,7 +36,6 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: rgb(143, 151, 90);
   width: 45vw;
   padding: 5vh;
@@ -46,11 +45,11 @@ form {
 .inputs {
   display: flex;
   flex-direction: row;
+  justify-content: right;
 }
 
 label {
   padding-top: 2vh;
-  margin-left: 2vw;
   font-size: 20px;
   color: rgb(15, 31, 2);
 }
@@ -68,31 +67,28 @@ button {
   font-family: "Josefin Sans", sans-serif;
 }
 
-#lastname {
-  margin-left: 5.1vw;
-}
-
 #number {
-  margin-left: 2.7vw;
+  margin-left: 3vw;
 }
 
 #message {
-  margin-left: 6.2vw;
+  margin-left: 5.7vw;
   height: 10vh;
 }
 
 #role {
-  margin-left: 9vw;
+  margin-left: 9.8vw;
   width: 18vw;
 }
 
 input[type="submit"],
 button {
-  margin-left: 13.7vw;
+  margin-left: 24.5vw;
+  width: 10vw;
   background-color: rgb(73, 116, 53);
   color: white;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* ##################### View  ##################### */
