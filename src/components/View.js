@@ -3,10 +3,16 @@ const View = ({ firstname, lastname, number, message, role }) => {
     <div id="viewMain">
       <div id="view">
         <div id="red">
-          <p>First name </p> <div>{firstname}</div>
+          <p>First name </p>{" "}
+          <div>
+            {firstname.substring(0, 1).toUpperCase() + firstname.substring(1)}
+          </div>
         </div>
         <div id="red">
-          <p>Last name </p> <div>{lastname}</div>
+          <p>Last name </p>{" "}
+          <div>
+            {lastname.substring(0, 1).toUpperCase() + lastname.substring(1)}
+          </div>
         </div>
         <div id="red">
           <p>Phone number </p> <div>{number}</div>

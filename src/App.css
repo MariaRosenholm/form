@@ -65,7 +65,7 @@ select,
 button {
   margin: 1vh 5vw;
   width: 20vw;
-  height: 5vh;
+  height: 6vh;
   border-radius: 5px;
   padding: 5px;
   font-size: 20px;
@@ -126,7 +126,7 @@ button {
 #view p {
   border-left: double rgb(237, 82, 15) 10px;
   margin-left: 2vw;
-  padding: 2.4vw;
+  padding: 2vw;
   font-size: 22px;
 }
 
@@ -139,6 +139,7 @@ button {
 
 #notesWrapper {
   display: flex;
+  flex-direction: row-reverse;
   overflow-x: scroll;
   border-top: olive double 2px;
 }
@@ -151,14 +152,15 @@ button {
   font-size: 1.8rem;
   padding: 3vw;
   margin: 1vh;
+  margin-top: 3vh;
   margin-right: 16vh;
 }
 
-#notes:first-child {
+#notes:last-child {
   margin-left: 2vw;
 }
 
-#notes:last-child {
+#notes:first-child {
   margin-right: 13vh;
 }
 

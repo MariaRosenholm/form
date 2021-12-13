@@ -10,8 +10,14 @@ const PopUp = ({ firstname, lastname, number, message, role, postIt }) => {
       <div id="card">
         <h2>Your message: </h2>
         <ul>
-          <li>First name: {firstname}</li>
-          <li>Last name: {lastname}</li>
+          <li>
+            First name:{" "}
+            {firstname.substring(0, 1).toUpperCase() + firstname.substring(1)}
+          </li>
+          <li>
+            Last name:{" "}
+            {lastname.substring(0, 1).toUpperCase() + lastname.substring(1)}
+          </li>
           <li>Phone number: {number}</li>
           <li>Message: {message}</li>
           <li>Role: {role}</li>
