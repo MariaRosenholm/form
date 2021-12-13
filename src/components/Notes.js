@@ -6,10 +6,10 @@ const Notes = ({ firstname, lastname, number, message, role }) => {
       <h3>
         {firstname.substring(0, 1).toUpperCase() + firstname.substring(1)}{" "}
         {lastname.substring(0, 1).toUpperCase() + lastname.substring(1)}
+        <span className="role">{`, ${role}`}</span>
       </h3>
-      <p>Role: {role}</p>
-      <p>Message: {message}</p>
       <p>Phone number: {number}</p>
+      <p>Message: {message}</p>
     </div>
   );
 };

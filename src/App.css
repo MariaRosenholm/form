@@ -126,12 +126,12 @@ button {
 #view p {
   border-left: double rgb(237, 82, 15) 10px;
   margin-left: 2vw;
-  padding: 1.8vw;
+  padding: 2.1vw;
   font-size: 22px;
 }
 
 #red div {
-  padding: 1.8vw;
+  padding: 2vw;
   font-family: "Petit Formal Script", cursive;
 }
 
@@ -173,6 +173,11 @@ h3 {
   font-size: 1.8rem;
   border-bottom: grey solid 3px;
   border-radius: 5px;
+}
+
+.role {
+  font-style: italic;
+  color: rgb(87, 92, 83);
 }
 
 /* ##################### PopUp  ##################### */
