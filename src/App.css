@@ -126,12 +126,12 @@ button {
 #view p {
   border-left: double rgb(237, 82, 15) 10px;
   margin-left: 2vw;
-  padding: 2.5vw;
+  padding: 2.3vw;
   font-size: 22px;
 }
 
 #red div {
-  padding: 2.3vw;
+  padding: 2vw;
   font-family: "Petit Formal Script", cursive;
 }
 
@@ -142,7 +142,6 @@ button {
   flex-direction: row-reverse;
   overflow-x: scroll;
   border-top: olive double 2px;
-  padding-top: 1vh;
 }
 
 #notes {
@@ -166,7 +165,7 @@ button {
 
 #notes p {
   width: 35vw;
-  margin-top: 0.8vh;
+  margin-top: 1vh;
 }
 
 h3 {
