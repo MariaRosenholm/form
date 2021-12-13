@@ -13,7 +13,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 75vh;
+  height: 70vh;
   border-top: olive double 2px;
 }
 
@@ -42,8 +42,8 @@ form {
   flex-direction: column;
   background-color: rgb(143, 151, 90);
   width: 45vw;
-  padding: 5vh;
-  height: 65vh;
+  padding: 3vh;
+  height: 60vh;
   box-shadow: rgb(22, 36, 16) 1px 1px 5px 1px;
 }
 
@@ -126,12 +126,12 @@ button {
 #view p {
   border-left: double rgb(237, 82, 15) 10px;
   margin-left: 2vw;
-  padding: 2.1vw;
+  padding: 2.5vw;
   font-size: 22px;
 }
 
 #red div {
-  padding: 2vw;
+  padding: 2.3vw;
   font-family: "Petit Formal Script", cursive;
 }
 
@@ -142,7 +142,7 @@ button {
   flex-direction: row-reverse;
   overflow-x: scroll;
   border-top: olive double 2px;
-  padding-top: 3vh;
+  padding-top: 1vh;
 }
 
 #notes {
